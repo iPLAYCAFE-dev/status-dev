@@ -1,31 +1,39 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config — iPLAYCAFE (.dev brand)  →  status.iplaycafe.dev
+# Copy this file as `.upptimerc.yml` into the GitHub repo `iPLAYCAFE-dev/status-dev`
+# (created from the upptimejs/upptime template, PUBLIC). See ../README.md + docs/RUNBOOK-STATUS-UPPTIME.md.
+# Schema: https://upptime.js.org/docs/configuration
+
+owner: iPLAYCAFE-dev
+repo: status-dev
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  # Quackback product-feedback portal (re-hosted on Zeabur, ADR-048 amendment).
+  - name: Feedback (Quackback)
+    url: https://feedback.iplaycafe.dev/api/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000   # ms; slower → "degraded"
+  # NOTE: iplaycafe.dev apex has no landing page yet (ADR-048 resolved decision) — add a
+  # monitor here once a .dev public surface exists.
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.iplaycafe.dev
+  name: iPLAYCAFE Status
+  introTitle: "**iPLAYCAFE** service status (.dev)"
+  introMessage: Live status of iPLAYCAFE .dev services. Subscribe via the buttons below.
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/iPLAYCAFE-dev
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Open the incident GitHub Issue against these users so GitHub emails them on down/up
+# (the leak-safe "email alert" path — no SMTP of ours; sidesteps the Bunny block).
+assignees:
+  - iPLAYCAFE-dev
+
+# Optional richer channels — uncomment + add the repo secret(s), then fill in.
+# notifications:
+#   - type: slack
+#     channel: "#status"   # secret SLACK_WEBHOOK_URL
+#   - type: discord        # secret DISCORD_WEBHOOK_URL
