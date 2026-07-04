@@ -1,7 +1,7 @@
 url: https://feedback.iplaycafe.dev/api/health
-status: down
-code: 521
-responseTime: 249
-lastUpdated: 2026-07-03T20:34:36.783Z
+status: up
+code: 200
+responseTime: 1131
+lastUpdated: 2026-07-04T01:39:52.477Z
 startTime: 2026-06-21T03:19:28.261Z
 generator: Upptime <https://github.com/upptime/upptime>
