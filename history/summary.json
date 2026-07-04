@@ -5,34 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/feedback.iplaycafe.dev.ico",
     "slug": "feedback-quackback",
     "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 775,
-    "timeDay": 673,
-    "timeWeek": 663,
-    "timeMonth": 775,
-    "timeYear": 775,
-    "dailyMinutesDown": {}
-  },
-  {
-    "name": "Feedback Mail (Quackback)",
-    "url": "https://iplaycafe-quackback-mail.zeabur.app/health",
-    "icon": "https://icons.duckduckgo.com/ip3/iplaycafe-quackback-mail.zeabur.app.ico",
-    "slug": "feedback-mail-quackback",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 837,
-    "timeDay": 721,
-    "timeWeek": 775,
-    "timeMonth": 837,
-    "timeYear": 837,
-    "dailyMinutesDown": {}
+    "uptime": "98.36%",
+    "uptimeDay": "78.80%",
+    "uptimeWeek": "96.97%",
+    "uptimeMonth": "98.36%",
+    "uptimeYear": "98.36%",
+    "time": 765,
+    "timeDay": 684,
+    "timeWeek": 669,
+    "timeMonth": 765,
+    "timeYear": 765,
+    "dailyMinutesDown": {
+      "2026-07-04": 100,
+      "2026-07-03": 205
+    }
   }
 ]
