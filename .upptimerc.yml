@@ -16,13 +16,6 @@ sites:
   # NOTE: iplaycafe.dev apex has no landing page yet (ADR-048 resolved decision) — add a
   # monitor here once a .dev public surface exists.
 
-  # Quackback mail-adapter (inbound email reply-threading; Zeabur). /health -> 200.
-  # DEPLOY-090 monitoring-sweep follow-up 2026-06-24.
-  - name: Feedback Mail (Quackback)
-    url: https://iplaycafe-quackback-mail.zeabur.app/health
-    expectedStatusCodes:
-      - 200
-    maxResponseTime: 5000
 
 status-website:
   cname: status.iplaycafe.dev
